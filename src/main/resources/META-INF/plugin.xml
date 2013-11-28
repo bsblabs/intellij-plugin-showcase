@@ -1,0 +1,26 @@
+<idea-plugin version="2">
+  <id>${project.artifactId}</id>
+  <name>${project.name}</name>
+  <version>${project.version}</version>
+  <vendor email="${vendor.email}" url="${vendor.url}">${vendor.name}</vendor>
+
+  <description>
+    <![CDATA[
+      ${project.description}
+      ]]>
+  </description>
+
+  <change-notes>
+    <![CDATA[
+      No changes.
+    ]]>
+  </change-notes>
+
+  <actions>
+      <group id="TestPlugin.Test" text="_Test plugin" description="Formatting actions">
+        <add-to-group group-id="MainMenu" anchor="last"  />
+        <action id="TestPlugin.TestAction" class="com.bsb.intellij.plugins.testplugin.TextBoxes" text="Test" description="Test" />
+      </group>
+  </actions>
+
+</idea-plugin>
